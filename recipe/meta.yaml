@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nlmixr2plot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nlmixr2plot/nlmixr2plot_{{ version }}.tar.gz
-  sha256: 0b27b1498b52766829754717f07087b3bf511452a19bf6106471670d3ff3cde4
+  sha256: a0f6fc75e194c18b73def2ed1c929a8508f84b1d46b9f5fddeba808a4316a7a3
 
 build:
   number: 0
