@@ -11,4 +11,5 @@ __migrator:
   include_noarch: true
 migrator_ts: 1750421535.8834505
 r_base:
+- '4.4'
 - '4.5'
