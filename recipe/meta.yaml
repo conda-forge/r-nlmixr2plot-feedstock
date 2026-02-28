@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nlmixr2plot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nlmixr2plot/nlmixr2plot_{{ version }}.tar.gz
-  sha256: b5bf529b63f14668f1fd6d896d9c79f6fb7efdf94f8625fd1c01f2841bdb5e0e
+  sha256: 0e390b6721fd4a26b228fab7e72e13eb42f526897e62da19b3845326cfb83602
 
 build:
   number: 0
@@ -48,8 +48,8 @@ about:
   home: https://nlmixr2.github.io/nlmixr2plot/
   dev_url: https://github.com/nlmixr2/nlmixr2plot
   license: GPL-3.0-or-later
-  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 'rxode2'
-    package (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>). This package is for 'ggplot2' plotting methods for 'nlmixr2' objects.
+  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 
+    'rxode2' package (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>). This package is for 'ggplot2' plotting methods for 'nlmixr2' objects.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
